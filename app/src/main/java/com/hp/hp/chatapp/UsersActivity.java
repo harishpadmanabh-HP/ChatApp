@@ -90,6 +90,7 @@ FirebaseRecyclerAdapter adapter = new FirebaseRecyclerAdapter<Users, UsersViewHo
 
                 final String userid=getRef(position).getKey();
 
+
                 holder.mview.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {

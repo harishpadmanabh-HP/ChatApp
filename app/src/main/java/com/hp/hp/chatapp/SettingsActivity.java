@@ -70,8 +70,11 @@ private Button changestatusbtn;
         //retrieve data from DB
         mcurrentUser=FirebaseAuth.getInstance().getCurrentUser();
         String currentuid=mcurrentUser.getUid();
-        mUserDatabase=FirebaseDatabase.getInstance().getReference().child("Users").child(currentuid);
 
+
+
+        mUserDatabase=FirebaseDatabase.getInstance().getReference().child("Users").child(currentuid);
+mUserDatabase.keepSynced(true);//for offline services
         mUserDatabase.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {

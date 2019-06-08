@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         //add toolbar
         mToolbar=findViewById(R.id.mainpagetoolbar);
         setSupportActionBar(mToolbar);
-        getSupportActionBar().setTitle("LAPIT CHAT APP");//set title to toolbar
+        getSupportActionBar().setTitle("BH CHAT APP");//set title to toolbar
 
 //tabs
         mViewPager=findViewById(R.id.tabpager);
