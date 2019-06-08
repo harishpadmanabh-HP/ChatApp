@@ -1,4 +1,4 @@
-package com.hp.hp.chatapp;
+package com.hp.hp.chatapp.Models;
 
 public class Users {
     //should be same as in db
